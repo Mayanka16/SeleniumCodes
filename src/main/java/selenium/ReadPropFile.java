@@ -33,13 +33,13 @@ public class ReadPropFile {
 		System.out.println(browser);
 
 		if (browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Downloads/chromedriver-mac-x64/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Documents/Study Material/Automation/chromedriver-mac-x64-2/chromedriver");
 			driver = new ChromeDriver();
 		} else if (browser.equals("safari")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Downloads/chromedriver-mac-x64/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Documents/Study Material/Automation/chromedriver-mac-x64-2/chromedriver");
 			driver = new SafariDriver();
 		} else if (browser.equals("ie")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Downloads/chromedriver-mac-x64/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Documents/Study Material/Automation/chromedriver-mac-x64-2/chromedriver");
 			driver = new InternetExplorerDriver();
 		
 

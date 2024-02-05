@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class GoogleSearchTest {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Downloads/chromedriver-mac-x64/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Documents/Study Material/Automation/chromedriver-mac-x64-2/chromedriver");
 		WebDriver driver = new ChromeDriver(); // launch chrome driver
 		driver.manage().window().maximize(); // maximize window
 		driver.manage().deleteAllCookies(); // delete all cookies

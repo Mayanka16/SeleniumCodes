@@ -2,28 +2,31 @@ package selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActionsClass {
+public class ContextClickORRightClick {
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Documents/Study Material/Automation/chromedriver-mac-x64-2/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		Thread.sleep(2000);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
-		driver.get("https://www.spicejet.com");
+		driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html");
 		Actions action = new Actions(driver);
-
-		action.moveToElement(driver.findElement(By.linkText("SpiceClub"))).build().perform();
-		Thread.sleep(2000);
-		//driver.findElement(By.xpath("//div[contains(text(),'Use Points')]")).click(); (error in catching xpath)
-		System.out.println("The page has been closed");
-
+		WebElement ele = driver.findElement(By.xpath("//span[text()='right click me']"));
+		action.contextClick(ele).perform();
 		driver.quit();
+		
+
 
 	}
 

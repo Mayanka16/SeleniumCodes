@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class HandleDropBox {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Downloads/chromedriver-mac-x64/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/mayanka/Documents/Study Material/Automation/chromedriver-mac-x64-2/chromedriver");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/");
